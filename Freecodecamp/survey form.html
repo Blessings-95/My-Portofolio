@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title> Survey Form</title>
+<link rel="stylesheet" href="styles.css"/>
+  </head>
+<body>
+  <div id="background"></div>
+  <form id="survey-form"  method="post">
+  <div>
+  <h1 id="title">Maranatha Baptist Church</h1>
+  <h2>Survey Form</h2>
+<p id="description">Welcome to Maranatha Baptist church<br />
+ please fill our annual survey form below as we want to improve our services. </p>
+
+<fieldset>
+ <legend>Personal Information</legend>
+ <label id="name-label"for="name"> Name: <input id="name" type="text" placeholder="Blessings Mikana"   required></label>
+ <label id="email-label"for="email">Email: <input id="email" type="email" placeholder="superbmikana@gmai.com" required></label>
+ <label id="number-label"for="number">Age: <input id="number" name="number-label" type="number" min="12" max="70" placeholder="13"></label>
+</fieldset>
+
+
+<fieldset>
+  <label  for="dropdown">Who do you think should be our next church secretary?
+  <select  id="dropdown" required>
+    <option value="">select one</option>
+    <option value="1">Mr Offman</option>
+    <option value="2">Mr F.Bonongwe</option>
+    
+        </select>
+        </label>
+</fieldset>
+<fieldset>
+  <legend>We would like to change the time we start  our service,  so which one would prefer? </legend>
+  <label for="06:00am-08:00am"><input id="06:00am-08:00am" type="radio" name="starting-time" class="inline" 
+   name="radio" value="06:00am-08:00am" 
+  checked>06:00am-08:00am</label>
+  <label for="08:00am-11:00am"><input id="08:00am-11:00am" <input 
+  type="radio" name="starting-time" class="inline" value="08:00am-11:00am"checked>08:00am-11:00am</label>
+</fieldset>
+<fieldset>
+  <legend><label>select programmes which you would like us to mantain on sunday service </legend>
+  <label for="Two Opening Songs"><input type="checkbox" value="Two Opening Songs">Two Opening Songs</label><br />
+    <label for="Sunday School"><input type="checkbox" value="Sunday School">Sunday School</label><br />
+      <label for="Chopereka"><input type="checkbox" value="Chopereka">Choperaka</label><br />
+      <label for="Nyimbo za Makwaya"><input type="checkbox" value="Nyimbo za Makwaya">Nyimbo za Makwaya</label><br />
+    </fieldset>
+
+     </fieldset>
+       </fieldset>
+	   <label for="information">Suggest any Service or Active which you would like us to consider adding in our next year's calendar: <textarea id="information" name="information" placeholder="write here....."></textarea></label>
+      </fieldset>
+
+  <input id="submit" type="submit" value="submit">
+
+
+</div>
+  </form>
+</body>
+</html>
